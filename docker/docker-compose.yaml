@@ -1,0 +1,5 @@
+version: '3'
+services:
+  casino_royale:
+    build: .
+    privileged: true
