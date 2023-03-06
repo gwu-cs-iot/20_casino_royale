@@ -1,5 +1,7 @@
-FROM debian:buster
+FROM arm32v7/debian:buster
 # raspbian is running debian, give this a whirl
+# Have to enforce arm32v7/armhf architecture, wiringpi incompatiable with arm64
+# Thankfully RPi4 is cross-compatiable with arm32v7 and arm64
 
 RUN apt update
 RUN apt-get install -y wget
